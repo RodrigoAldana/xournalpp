@@ -3,6 +3,15 @@
 [![Build Status](https://dev.azure.com/xournalpp/xournalpp/_apis/build/status/CI?branchName=master)](https://dev.azure.com/xournalpp/xournalpp/_build/latest?definitionId=1&branchName=master)
 [![Join the chat at https://gitter.im/xournalpp/xournalpp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/xournalpp/xournalpp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## What is different in this FORK?
+
+I wanted an editor with caligraphic mode since I prefer the "feeling" of a caligraphic pen when taking math notes, 
+but I coultn't find any editor (Inskape renders the stroke untril you lift the pen, and gimp is anoying for taking notes overall) 
+which fulfilled my needs when using my XP-PEN tablet. 
+
+Xournal++ provides a really neat and fast interface, but lacks of caligraphic mode. Fortunatelly, as a result of a similar request by [cuppajoeman](https://github.com/cuppajoeman), he and [rolandlo](https://github.com/rolandlo) ended up trying some stuff for a caligraphic mode in this [fork](https://github.com/cuppajoeman/xournalpp). However, this remained a test bench: the "standard" mode was unavailable, the pen pressure was not implemented, etc... So I basically hardcoded that version in order to fix some speed issues (there still an anti-alias fix by rolandlo that I had to remove), added the pen pressure funcionality to modify the width of the line, and blended this with the standard mode. Since I was not very familiar with the original code base and I dind't wanted to speed much more time on this, the caligraphic mode is hardcoded in the "dash-dot" mode of the pen tool. Of course this is far from being a finished functionality addition, but it is fine enough for me to keep working in what I was doing before all this. Thanks to cuppajoeman and rolandlo!
+
+
 <table border="0px" ><tr><td width = 600px>
 
 <img src="readme/main.png" width=550px% title="Xournal++ Screenshot on Linux"/>
