@@ -9,7 +9,7 @@ LineBackgroundPainter::~LineBackgroundPainter() = default;
 void LineBackgroundPainter::resetConfig() {
     this->foregroundColor1 = 0x40A0FFU;
     this->foregroundColor2 = 0xFF0080U;
-    this->lineWidth = 0.5;
+    this->lineWidth = 0.5*4;
 }
 
 void LineBackgroundPainter::paint() {
@@ -25,7 +25,7 @@ void LineBackgroundPainter::paint() {
 const double headerSize = 80;
 const double footerSize = 20;
 
-const double roulingSize = 24;
+const double roulingSize = 24*6;
 
 void LineBackgroundPainter::paintBackgroundRuled() {
     Util::cairo_set_source_rgbi(cr, this->foregroundColor1);
